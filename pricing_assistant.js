@@ -27,3 +27,7 @@ console.log(`Profit per unit is $${profitPerUnit.toFixed(2)}.`);
 // break even units
 let breakEvenUnits = Math.ceil(FIXED_MONTHLY_COSTS / profitPerUnit);
 console.log(`Break even units needed per month: ${breakEvenUnits}.`);
+
+// is the product profitable?
+let isProfitable = profitPerUnit > 0;
+console.log(`Is the product profitable? ${isProfitable}.`);
