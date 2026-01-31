@@ -24,3 +24,6 @@ console.log(`Final price with tax is $${finalPriceWithTax.toFixed(2)}.`);
 let profitPerUnit = finalPriceWithTax - costPerUnit;
 console.log(`Profit per unit is $${profitPerUnit.toFixed(2)}.`);
 
+// break even units
+let breakEvenUnits = Math.ceil(FIXED_MONTHLY_COSTS / profitPerUnit);
+console.log(`Break even units needed per month: ${breakEvenUnits}.`);
